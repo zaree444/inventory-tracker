@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        Inventory Tracker Application
+    </header>
+
+    <div class="main-container">
+        <form id="add-item-form">
+            <input type="text" id="item-name" placeholder="Enter Item Name" required>
+            <input type="number" id="item-quantity" placeholder="Enter Quantity" required>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="inventory-list">
+                <!-- Dynamically populated rows -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
